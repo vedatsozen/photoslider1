@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTO SLIDER</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    
+<div id="main">
+
+<div id="left"><img id="leftarrow" class="arrow" src="left.png"></div>
+
+<div id="container">
+
+        <div id="slider">
+        <img src="photo1.jpg">
+        <img src="photo2.jpg">
+        <img src="photo3.jpg">
+        <img src="photo4.jpg">
+        </div>
+
+</div>
+
+<div id="right"><img id="rightarrow" class="arrow" src="right.png"></div>
+
+</div>
+
+</body>
+
+<script>
+
+$(document).ready(function() {
+
+$("#leftarrow").click(function() {
+
+$("#slider").animate({left:'-800px'});
+
+});
+
+});
+
+
+
+
+
+</script>
+</html>
